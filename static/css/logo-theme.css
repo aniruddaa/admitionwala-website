@@ -1,0 +1,18 @@
+/* Logo Matching Theme - Monochromatic styling overrides */
+
+/* Make glass elements grayscale aligned */
+.glass {
+    backdrop-filter: blur(12px) grayscale(50%);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure buttons have a premium sharp look to match black and white themes */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Refined shadow for white background components */
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
