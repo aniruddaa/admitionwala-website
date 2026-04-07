@@ -1,0 +1,13 @@
+# Render Deployment Configuration
+
+# This file is used to configure deployment settings for the Render hosting service.
+
+services:
+  - type: web
+    name: admitionwala-website
+    env: static
+    staticSite: 
+      includePath: .  
+      rootPath: / 
+      buildCommand: ''  
+      publishPath: ./public
