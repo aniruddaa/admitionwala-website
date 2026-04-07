@@ -1,0 +1,385 @@
+/* ====================================
+   MINIMAL REALISTIC LIGHT THEME
+   Clean, Professional, Subtle
+   ==================================== */
+
+:root {
+    --primary: #6366f1;
+    --primary-light: #818cf8;
+    --secondary: #0ea5e9;
+    --accent: #f97316;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border: #e5e7eb;
+    --bg-light: #f9fafb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, main, section {
+    background: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+
+/* ====================================
+   HERO SECTION - CLEAN WHITE
+   ==================================== */
+
+.hero-section {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    opacity: 0.06 !important;
+}
+
+.hero-section > * {
+    position: relative;
+    z-index: 10;
+}
+
+/* Hero Profile Card - Clean & Simple */
+.hero-section .bg-purple-700.bg-opacity-70 {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    transform: none !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+}
+
+.hero-section .bg-purple-700.bg-opacity-70:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* ====================================
+   CARDS - CLEAN & MINIMAL
+   ==================================== */
+
+.service-card {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-left: 4px solid var(--primary) !important;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+}
+
+.service-card::before {
+    display: none !important;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px) !important;
+    border-left-color: var(--secondary) !important;
+}
+
+.service-card h3 {
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: var(--text-light) !important;
+}
+
+/* Service Icons - Subtle */
+.service-icon {
+    width: 48px;
+    height: 48px;
+    background: #f0f4ff !important;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary) !important;
+    transition: all 0.2s ease;
+}
+
+.service-card:hover .service-icon {
+    background: #e0e7ff !important;
+    transform: scale(1.08);
+}
+
+/* Team Member Cards */
+.team-member {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px) !important;
+}
+
+.team-member img {
+    transition: transform 0.2s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.03);
+}
+
+.team-member .h-56 {
+    background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+    animation: none !important;
+    background-size: 100% !important;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px) !important;
+}
+
+.portfolio-card img {
+    transition: transform 0.2s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Value Cards */
+.value-card {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+}
+
+.value-card::after {
+    display: none !important;
+}
+
+.value-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px) !important;
+}
+
+.value-card .text-blue-600 { color: var(--secondary) !important; }
+.value-card .text-green-600 { color: #10b981 !important; }
+.value-card .text-purple-600 { color: var(--accent) !important; }
+
+/* ====================================
+   BUTTONS - SIMPLE & CLEAN
+   ==================================== */
+
+.bg-gradient-to-r.from-purple-600.to-purple-700 {
+    background: var(--primary) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(99, 102, 241, 0.2);
+    transition: all 0.2s ease;
+    animation: none !important;
+}
+
+.bg-gradient-to-r.from-purple-600.to-purple-700::before {
+    display: none !important;
+    animation: none !important;
+}
+
+.bg-gradient-to-r.from-purple-600.to-purple-700:hover {
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25) !important;
+    transform: translateY(-2px) !important;
+    background: #4f46e5 !important;
+}
+
+/* ====================================
+   FORMS - CLEAN
+   ==================================== */
+
+input, textarea, select {
+    background: #ffffff !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 6px;
+    color: var(--text-dark) !important;
+    transition: all 0.2s ease;
+    animation: none !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+    transform: none !important;
+    background: #ffffff !important;
+}
+
+/* ====================================
+   NAVIGATION & FOOTER
+   ==================================== */
+
+nav {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: none !important;
+}
+
+nav a {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--primary) !important;
+}
+
+footer {
+    background: #1f2937 !important;
+    color: white;
+}
+
+footer a {
+    color: var(--secondary) !important;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--accent) !important;
+}
+
+/* ====================================
+   ABOUT & SECTION BACKGROUNDS
+   ==================================== */
+
+.about-hero {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border);
+    animation: none !important;
+    box-shadow: none !important;
+}
+
+/* ====================================
+   TYPOGRAPHY
+   ==================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark) !important;
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--primary) !important;
+}
+
+h2 {
+    color: var(--text-dark) !important;
+}
+
+h3 {
+    color: var(--primary) !important;
+}
+
+/* ====================================
+   COLOR OVERRIDES
+   ==================================== */
+
+.bg-purple-600, .bg-purple-700 {
+    background-color: var(--primary) !important;
+}
+
+.text-purple-600, .text-purple-700 {
+    color: var(--primary) !important;
+}
+
+.bg-yellow-300, .bg-yellow-400 {
+    background-color: var(--accent) !important;
+}
+
+.text-yellow-300, .text-yellow-400 {
+    color: var(--accent) !important;
+}
+
+.border-yellow-400 {
+    border-color: var(--accent) !important;
+}
+
+.border-purple-100 {
+    border-color: var(--border) !important;
+}
+
+.border-purple-500, .border-purple-600 {
+    border-color: var(--primary) !important;
+}
+
+/* ====================================
+   REMOVE EXCESSIVE EFFECTS
+   ==================================== */
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); }
+    50% { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====================================
+   UTILITY CLASSES
+   ==================================== */
+
+.bg-primary {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.shadow-xl {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
