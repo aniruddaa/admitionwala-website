@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+
+{% block title %}Careers - Admitionwala IT Services{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-[50vh] flex items-center justify-center text-white py-16 lg:py-24 overflow-hidden">
+    <!-- Background Image - Collaborative Team -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-purple-900/85 to-slate-900/90"></div>
+    </div>
+    
+    <div class="absolute inset-0 overflow-hidden z-[1]">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 0.5s;"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="text-center animate-fadeInUp">
+            <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-md border border-purple-400/50 rounded-full text-purple-200 text-sm font-medium mb-4 shadow-lg">
+                🚀 Join Our Team
+            </span>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Build Your Career with <span class="text-pink-400">Admitionwala</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+                We're looking for passionate technologists to join our growing team and help transform businesses through innovation.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#open-positions" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all text-center">
+                    View Open Positions
+                </a>
+                <a href="{% url 'myapp:contact' %}" class="px-8 py-4 border-2 border-purple-400 text-white font-bold rounded-lg hover:bg-purple-500/30 backdrop-blur-sm transition-all text-center">
+                    Send Your Resume →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Join Us Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Background Image - Modern bright office -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/95 backdrop-blur-[2px]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Why Work with <span class="text-purple-600">Admitionwala?</span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We believe in creating an environment where talented professionals can grow, innovate, and make a real impact
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Benefit 1 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Latest Tech Stack</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Work with cutting-edge technologies including React, Django, AWS, and more. We invest in your technical growth.
+                </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp" style="animation-delay: 0.1s;">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Collaborative Culture</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Join a team of talented professionals who value collaboration, innovation, and continuous learning.
+                </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp" style="animation-delay: 0.2s;">
+                <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Career Growth</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Clear career path with opportunities for advancement, leadership roles, and continuous skill development.
+                </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp" style="animation-delay: 0.3s;">
+                <div class="w-16 h-16 bg-gradient-to-br from-orange-600 to-orange-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Wellness Benefits</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Comprehensive health insurance, flexible working hours, and remote work options for work-life balance.
+                </p>
+            </div>
+
+            <!-- Benefit 5 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp" style="animation-delay: 0.4s;">
+                <div class="w-16 h-16 bg-gradient-to-br from-pink-600 to-pink-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Learning & Development</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Annual L&D budget for courses, certifications, and conferences to enhance your professional skills.
+                </p>
+            </div>
+
+            <!-- Benefit 6 -->
+            <div class="group p-8 bg-white/80 backdrop-blur-md rounded-2xl border border-purple-100 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInUp" style="animation-delay: 0.5s;">
+                <div class="w-16 h-16 bg-gradient-to-br from-sky-600 to-sky-400 rounded-xl flex items-center justify-center text-3xl text-white mb-6 group-hover:scale-110 transition-transform shadow-md">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-gray-900">Global Exposure</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Work on international projects and collaborate with clients from India, UK, USA, and across the globe.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Open Positions Section -->
+<section id="open-positions" class="py-24 relative overflow-hidden">
+    <!-- Background Image - Typing / Developer -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-purple-900/90 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-slate-900/80"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                Open <span class="text-pink-400">Positions</span>
+            </h2>
+            <p class="text-xl text-purple-200 max-w-3xl mx-auto">
+                Currently hiring passionate professionals for these roles
+            </p>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- Position 1 -->
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl border-2 border-purple-300 hover:border-pink-400 shadow-xl hover:shadow-2xl transition-all p-8 group cursor-pointer hover:-translate-y-1">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Senior Full-Stack Developer (React + Django)</h3>
+                        <div class="flex gap-3 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Pune
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-briefcase mr-1"></i>Full-Time
+                            </span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-star mr-1"></i>Experience: 3-5 Years
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-3xl text-purple-600 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    We're looking for an experienced full-stack developer to lead our web projects and mentor junior developers. You should have strong expertise in React, Django, and cloud technologies.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">React</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Django</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">PostgreSQL</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">AWS</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Docker</span>
+                </div>
+                <a href="{% url 'myapp:contact' %}" class="inline-block mt-4 text-purple-600 font-bold hover:text-pink-600 transition">
+                    Apply Now →
+                </a>
+            </div>
+
+            <!-- Position 2 -->
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl border-2 border-purple-300 hover:border-pink-400 shadow-xl hover:shadow-2xl transition-all p-8 group cursor-pointer hover:-translate-y-1">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Digital Marketing Specialist</h3>
+                        <div class="flex gap-3 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Pune / Remote
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-briefcase mr-1"></i>Full-Time
+                            </span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-star mr-1"></i>Experience: 2-3 Years
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-3xl text-purple-600 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Join our marketing team to develop and execute digital campaigns for our diverse client base. Experience with SEO, Google Ads, and social media management required.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">SEO</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Google Ads</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Social Media</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Content Strategy</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Analytics</span>
+                </div>
+                <a href="{% url 'myapp:contact' %}" class="inline-block mt-4 text-purple-600 font-bold hover:text-pink-600 transition">
+                    Apply Now →
+                </a>
+            </div>
+
+            <!-- Position 3 -->
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl border-2 border-purple-300 hover:border-pink-400 shadow-xl hover:shadow-2xl transition-all p-8 group cursor-pointer hover:-translate-y-1">
+                <div class="flex items-start justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Data Analytics Engineer</h3>
+                        <div class="flex gap-3 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Pune
+                            </span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-briefcase mr-1"></i>Full-Time
+                            </span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
+                                <i class="fas fa-star mr-1"></i>Experience: 2-4 Years
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-3xl text-purple-600 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Help businesses unlock insights from their data. You'll design dashboards, create reports, and build data pipelines using Python, SQL, and Power BI.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Python</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">SQL</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Power BI</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Tableau</span>
+                    <span class="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">Machine Learning</span>
+                </div>
+                <a href="{% url 'myapp:contact' %}" class="inline-block mt-4 text-purple-600 font-bold hover:text-pink-600 transition">
+                    Apply Now →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Application Process Section -->
+<section class="py-24 relative overflow-hidden">
+    <!-- Background Image - Bright Office Structure -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/95"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 animate-fadeInUp">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Our <span class="text-purple-600">Application Process</span>
+            </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+            <!-- Step 1 -->
+            <div class="text-center animate-fadeInUp">
+                <div class="w-20 h-20 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4 shadow-lg">
+                    1
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Submit Resume</h3>
+                <p class="text-gray-600">Apply through our contact page or email your resume directly</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="hidden md:flex items-center justify-center">
+                <i class="fas fa-arrow-right text-3xl text-purple-600"></i>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="text-center animate-fadeInUp" style="animation-delay: 0.1s;">
+                <div class="w-20 h-20 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4 shadow-lg">
+                    2
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Initial Screening</h3>
+                <p class="text-gray-600">Our team reviews your application and qualifications</p>
+            </div>
+
+            <!-- Arrow -->
+            <div class="hidden md:flex items-center justify-center">
+                <i class="fas fa-arrow-right text-3xl text-purple-600"></i>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s;">
+                <div class="w-20 h-20 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4 shadow-lg">
+                    3
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Interview Round</h3>
+                <p class="text-gray-600">Discussion about your skills, experience, and career goals</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="text-center md:col-start-2 md:col-span-2 animate-fadeInUp" style="animation-delay: 0.3s;">
+                <div class="w-20 h-20 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4 shadow-lg">
+                    4
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Offer & Onboarding</h3>
+                <p class="text-gray-600">Receive offer letter and onboard to your new role</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden text-white">
+    <!-- Background Image - Vibrant City / Networking -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=1600&h=600&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 via-pink-800/85 to-purple-900/90"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-fadeInUp">Ready to Start Your Journey?</h2>
+        <p class="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto animate-fadeInUp">
+            Send us your resume and let's explore opportunities together. We're excited to meet talented professionals!
+        </p>
+        <a href="{% url 'myapp:contact' %}" class="inline-block px-10 py-4 bg-white text-purple-600 font-bold rounded-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all animate-fadeInUp">
+            Send Your Resume Today
+        </a>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+$(document).ready(function() {
+    // Smooth scroll for links
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this.getAttribute('href'));
+        if(target.length) {
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 80
+            }, 1000);
+        }
+    });
+    
+    // Add animation on scroll
+    $(window).on('scroll', function() {
+        $('.animate-fadeInUp').each(function() {
+            if($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                $(this).addClass('fadeInUp-trigger');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
