@@ -1,0 +1,303 @@
+/* Custom CSS for WebStudio */
+
+/* Hero Section Background */
+.hero-section {
+    background: linear-gradient(135deg, #2d1b69 0%, #3d2574 25%, #4a2580 50%, #3d2574 75%, #2d1b69 100%),
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=800&fit=crop') center/cover;
+    background-blend-mode: overlay;
+    background-size: 400% 400%, cover;
+    animation: gradient 20s ease infinite;
+    position: relative;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Professional Background Patterns */
+body {
+    background: #f8f9fa;
+}
+
+/* Services Section Background */
+.services-bg {
+    background: linear-gradient(135deg, rgba(239, 246, 255, 0.8) 0%, rgba(243, 232, 255, 0.8) 100%),
+                url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop') fixed center/cover;
+    background-attachment: fixed;
+}
+
+/* Stats Section Background */
+.stats-section {
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(17, 24, 39, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop') center/cover !important;
+    background-blend-mode: overlay;
+}
+
+/* CTA Section Background */
+.cta-section {
+    background: linear-gradient(135deg, rgba(74, 37, 128, 0.85) 0%, rgba(61, 34, 128, 0.85) 100%),
+                url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop') center/cover;
+    background-blend-mode: overlay;
+}
+
+/* Portfolio & About Hero */
+.portfolio-hero,
+.about-hero,
+.contact-hero {
+    position: relative;
+    background: linear-gradient(135deg, rgba(74, 37, 128, 0.9) 0%, rgba(61, 34, 128, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop') center/cover;
+    background-blend-mode: overlay;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slideUp {
+    animation: slideUp 0.8s ease-out 0.2s forwards;
+}
+
+/* Card Hover Effects */
+.service-card,
+.article-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.article-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item img {
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Form Inputs */
+input, textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(66, 135, 245, 0.1);
+}
+
+/* Team Member Cards */
+.team-member {
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px) rotateY(5deg);
+}
+
+/* Value Cards */
+.value-card {
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Buttons */
+.filter-btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    transform: scale(1.05);
+}
+
+.filter-btn:not(.active):hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar */
+nav {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+nav.scrolled {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Line Clamp */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Success and Error Messages */
+.message-box {
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Stats Counter */
+.stat-number {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        height: calc(100vh - 64px);
+    }
+}
+
+/* Smooth Transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7e22ce 0%, #a855f7 100%);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a855f7 0%, #7e22ce 100%);
+}
+
+/* Shadow Effects */
+.shadow-soft {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-hard {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Texture Overlay */
+.texture-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px
+        );
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Professional Gradient Overlays */
+.gradient-overlay-light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+}
+
+.gradient-overlay-dark {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
