@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Admitionwala IT Services{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="py-12 lg:py-24 relative overflow-hidden text-white min-h-[40vh] flex items-center">
+    <!-- Background Image - Networking/Communication Concept -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&h=800&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-900/90 via-sky-800/80 to-emerald-900/90"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="text-center animate-fadeInUp">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Let's Connect</h1>
+            <p class="text-xl text-sky-100">Have a project in mind? Let's discuss and make it happen</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-12 lg:py-24 relative overflow-hidden">
+    <!-- Background Image - Clean Office Space -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/95"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact Info -->
+            <div class="animate-fadeInLeft">
+                <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+                
+                <div class="space-y-8 bg-white/50 backdrop-blur-md p-8 rounded-2xl border border-sky-100 shadow-sm">
+                    <!-- Phone -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-lg flex items-center justify-center text-white text-lg shadow-md hover:scale-110 transition-transform">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Phone</h3>
+                            <p class="text-gray-600">+91 8010170697</p>
+                            <p class="text-sm text-gray-500">Available Mon-Fri, 9am-6pm IST</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-lg flex items-center justify-center text-white text-lg shadow-md hover:scale-110 transition-transform">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Email</h3>
+                            <p class="text-gray-600">jadhavaniruddha11@gmail.com</p>
+                            <p class="text-gray-600">hello@admitionwala.com</p>
+                            <p class="text-sm text-gray-500">We'll respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-gradient-to-br from-sky-500 to-emerald-500 rounded-lg flex items-center justify-center text-white text-lg shadow-md hover:scale-110 transition-transform">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900">Location</h3>
+                            <p class="text-gray-600">Gajanan Maharaj Nagar, Dighi</p>
+                            <p class="text-gray-600">Pune, Maharashtra 411015, India</p>
+                            <p class="text-sm text-gray-500">Serving clients worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <p class="text-gray-600 mb-4 font-medium">Follow us on social media</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 bg-white hover:bg-sky-500 hover:text-white text-sky-600 rounded-xl flex items-center justify-center transition-all shadow-md hover:shadow-lg hover:-translate-y-1 text-lg">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white hover:bg-sky-400 hover:text-white text-sky-500 rounded-xl flex items-center justify-center transition-all shadow-md hover:shadow-lg hover:-translate-y-1 text-lg">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white hover:bg-blue-600 hover:text-white text-blue-600 rounded-xl flex items-center justify-center transition-all shadow-md hover:shadow-lg hover:-translate-y-1 text-lg">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white hover:bg-pink-600 hover:text-white text-pink-600 rounded-xl flex items-center justify-center transition-all shadow-md hover:shadow-lg hover:-translate-y-1 text-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="animate-fadeInRight">
+                <form method="post" class="bg-white/90 backdrop-blur-xl p-10 rounded-2xl border border-sky-100 shadow-2xl">
+                    {% csrf_token %}
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-900 font-bold mb-3">Your Name</label>
+                        <input type="text" name="name" placeholder="John Doe" required 
+                            class="w-full px-4 py-3 bg-white/50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-900 font-bold mb-3">Email Address</label>
+                        <input type="email" name="email" placeholder="john@example.com" required 
+                            class="w-full px-4 py-3 bg-white/50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-900 font-bold mb-3">Phone (Optional)</label>
+                        <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" 
+                            class="w-full px-4 py-3 bg-white/50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-900 font-bold mb-3">Project Type</label>
+                        <select name="project_type" 
+                            class="w-full px-4 py-3 bg-white/50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none transition cursor-pointer">
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="analytics">Data Analytics</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <label class="block text-gray-900 font-bold mb-3">Tell Us About Your Project</label>
+                        <textarea name="message" placeholder="Describe your project goals and requirements..." rows="5" required 
+                            class="w-full px-4 py-3 bg-white/50 border border-sky-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition resize-none"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full px-6 py-4 bg-gradient-to-r from-sky-500 to-emerald-500 text-white font-bold rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                    
+                    <p class="text-gray-600 text-sm text-center mt-4">We'll get back to you within 24 hours</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map or FAQ -->
+<section class="py-12 lg:py-24 relative overflow-hidden">
+    <!-- Background Image - Corporate Space -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=900&fit=crop&q=80" alt="" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-sky-50/95"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Frequently Asked <span class="text-emerald-600">Questions</span></h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-sky-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center text-xl mb-4"><i class="fas fa-clock"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">How long does a typical project take?</h3>
+                <p class="text-gray-600">Project timelines vary based on scope. Simple websites: 2-4 weeks. Complex applications: 2-6 months.</p>
+            </div>
+            <div class="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-sky-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl mb-4"><i class="fas fa-tags"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">What's your pricing model?</h3>
+                <p class="text-gray-600">We offer flexible pricing: fixed project rates, hourly rates, or retainer models based on your needs.</p>
+            </div>
+            <div class="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-sky-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center text-xl mb-4"><i class="fas fa-headset"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Do you provide ongoing support?</h3>
+                <p class="text-gray-600">Yes! We offer maintenance, updates, and continuous support packages for all our projects.</p>
+            </div>
+            <div class="p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-sky-100 hover:shadow-lg hover:-translate-y-1 transition-all">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">How do you ensure project security?</h3>
+                <p class="text-gray-600">We follow industry best practices, use secure frameworks, and conduct regular security audits.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const message = $('#message').val();
+        const csrfToken = $('[name="csrfmiddlewaretoken"]').val();
+        
+        $.ajax({
+            url: '{% url "myapp:submit_contact" %}',
+            type: 'POST',
+            contentType: 'application/json',
+            headers: {
+                'X-CSRFToken': csrfToken
+            },
+            data: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            }),
+            success: function(response) {
+                $('#contact-form')[0].reset();
+                $('#success-message').removeClass('hidden');
+                $('#error-message').addClass('hidden');
+                
+                setTimeout(function() {
+                    $('#success-message').addClass('hidden');
+                }, 5000);
+            },
+            error: function(response) {
+                let errorText = 'Something went wrong. Please try again.';
+                if(response.responseJSON && response.responseJSON.message) {
+                    errorText = response.responseJSON.message;
+                }
+                $('#error-text').text(errorText);
+                $('#error-message').removeClass('hidden');
+                $('#success-message').addClass('hidden');
+                
+                setTimeout(function() {
+                    $('#error-message').addClass('hidden');
+                }, 5000);
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
